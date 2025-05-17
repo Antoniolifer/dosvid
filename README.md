@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# Dosvid Personal Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the project
+_Dosvid_ is an application for structuring your personal development.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Design 
+Level progression system:
+- earned experience points
+- goals
+  - add, edit, complete, delete.
+  - history view of completed goals
+- Reward management
 
-## Expanding the ESLint configuration
+## Implementation
+#### Typescript 
+#### Tailwind 
+#### React
+#### State management 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Optimisation 
+#### Performance Testing 
+Bottleneck was the bundle size. 
+#### Bundle analysis 
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Usage 
+Current application is in a demonstration state. It has some pre-loaded goals and rewards, for illustration purposes. 
+You can, however, clear history, goals, and rewards if they bother you, and fully use the application. 
+It has 11 levels, with gradually increasing experience goals. 
+The recommended "difficulty scaling" is approximately 1 extra day of work, per level, beginning with 1 day.
+## Challenges
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+#### Feature Creep 
+The nature of this project permits it to be ambitious and all-reaching in terms of inspiration for features and future prospects. 
+A game-like mechanic of level progression opens up to a whole world of Role-Playing Game elements that can be introduced. 
+At the same time, the "data" side, with earning points daily over time, invites statistical analysis, visualisations, graphs and charts, and much more. 
+
+Recognising these "magnetic poles" as fertile ground for feature creep has allowed me to establish a strict MVP very early in the development, outlining exactly the features that are the core functionality of the _Dosvid_ system. 
+
+#### Dependency Externalisation 
+As described in [performance testing](#Optimisation), the bottleneck of the loading speed was the size of react-dom dependency. 
+#### complex project architecture
+This project 
+
+## Future improvements 
+
+## Tech
+
+
+## Author
+My name is Anton Serdiuk and I am a Javascript/React.js web developer from Perth, WA.
