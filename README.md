@@ -42,7 +42,7 @@ The recommended "difficulty scaling" is approximately 1 extra day of work, per l
 Overall, the app is responsive, and does not suffer from any noticeable lag, delay, even with longer list sizes. However, not just the Largest Contentful Paint, but also the First Contentful Paint, was significantly delayed when loading the website. LCP presented a time of, on average, 4.5seconds on x4 CPU slowdown and 3G network. Bottleneck was the bundle size. Upon inspection, the HTML file was <1kB, CSS was ~20kB, and the single Javascript file was ~250kB. 
 
 #### Bundle analysis & Chunk Splitting
-Initially, given the structure of the application, I chose to lazy-load the secondary views. This has allowed to reduce the main js chunk size from 250kB to 230kB, an ~8% reduction. As I was anticipating a different result, I decided to analyse the bundle contents, and more than 70% was the react-dom dependency. Further explained in [dependency externalisation](#Dependency)
+Initially, given the structure of the application, I chose to lazy-load the secondary views. This has allowed to reduce the main js chunk size from 250kB to 230kB, an ~8% reduction. As I was anticipating a different result, I decided to analyse the bundle contents, and more than 70% was the react-dom dependency. Further explained in [dependency externalisation](#dependency-externalisation)
 
 ## Technical decisions
 
@@ -68,4 +68,6 @@ This project required a "time investment" into building the reducer and the cont
 
 
 ## Author
-My name is Anton Serdiuk and I am a Javascript/React.js web developer from Perth, WA.
+### Author
+Hi, my name is Anton Serdiuk, I am a front-end developer focused on building thoughtful, interactive applications with Javascript, React and TypeScript. I'm passionate about balancing clean code, UX clarity, and ambitious ideas.
+
