@@ -8,6 +8,13 @@ _A powerful and flexible tool for levelling up._
 It was developed using **React**(native React Context x Reducer global store), **Typescript**, and **Tailwind**. 
 
 _Check out the live demo here:_ https://dosvid.netlify.app/
+<div align="center">
+<img width="900" alt="main page showing the goals" src="https://github.com/user-attachments/assets/0c2ce0c4-9c45-478b-ab58-1738cd31760a" />
+  <p>Goals view</p>
+</div>
+
+
+
 
 
 ## Design 
@@ -27,12 +34,21 @@ Level progression system:
   - non-distracting, smooth animations
   - local storage - fully functional offline
   
+<div align="center">
+<img width="900" alt="secondary page showing the rewards" src="https://github.com/user-attachments/assets/5d016fad-d94e-4f70-89cf-db58a31299b7" />
+  <p>Rewards View</p>
+</div>
+
 
 ## Usage 
-Current application is in a demonstration state. It has some pre-loaded goals and rewards, for illustration purposes. 
-You can, however, clear history, goals, and rewards if they bother you, and fully use the application. 
-It has 11 levels, with gradually increasing experience goals. 
-The recommended "difficulty scaling" is approximately 1 extra day of work, per level, beginning with 1 day.
+The expected user experience involves adding some goals for the near future, and then adding an incentive, a reward for reaching the next level. 
+The user has the ability to decide how important that task is, my giving it a particular number of experience points, when the goal is completed. 
+
+
+<div align="center">
+<img width="900" alt="secondary page showing the history logs" src="https://github.com/user-attachments/assets/144a9df0-dec8-4a3c-a3d6-8ec29c769828" />
+  <p>History View</p>
+</div>
 
 ## Implementation Stack
 - **Typescript**: For better type safety, especially useful in managing reducer states and context.
@@ -68,9 +84,16 @@ The current system provides a great foundation for expansion and addition of new
 - Statistics view - to observe trends
 - Customiseable daily goal functionality
 - Сustomisation of "level difficulty"
-  
 
 
+
+
+<div align="center">
+<img width="280" alt="" src="https://github.com/user-attachments/assets/ece49052-fce0-430c-a95b-eb821f4522b0" hspace="5"/>
+<img width="280" alt="" src="https://github.com/user-attachments/assets/ec197598-b7a6-4b12-b41c-d568ff7797cf" hspace="5"/>
+<img width="280" alt="" src="https://github.com/user-attachments/assets/b09b77c9-b1e8-42a1-ad87-cd51a7cf6e06" hspace="5"/>
+  <p>Mobile layouts</p>
+</div>
 
 
 ## Author
