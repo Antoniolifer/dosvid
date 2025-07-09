@@ -70,7 +70,7 @@ function Goal({
     <div className={style}>
         {/* coloured highlight */}
       <div
-        className={`-ml-4 h-full self-start absolute -my-4 w-10 md:w-10 mr-2  ${
+        className={`-ml-4 h-full self-start  absolute -my-4 w-10 md:w-10 mr-2  ${
           goal.completed ? "bg-forest" : "bg-scarlet"
         }`}
       />

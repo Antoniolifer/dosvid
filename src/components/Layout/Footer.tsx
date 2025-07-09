@@ -3,7 +3,7 @@
 function Footer() {
     return (
       <div className="text-gray-500 justify-self-end h-18 py-6 text-center text-lg md:text-xl mt-5
-      w-full
+      w-9/10 md:w-full mx-auto
       
       
       ">
