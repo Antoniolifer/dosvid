@@ -1,8 +1,12 @@
 {
-  "name": "dosvid-project",
+  "name": "dosvid",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description":"task manager with a reward system(progress by earning experience points) and history view.",
+  "author":"Anton Serdiuk Antoniolifer",
+  "keywords":["react","tailwind", "typescipt", "task manager", "self-improvement","rpg", "reward system"],
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
