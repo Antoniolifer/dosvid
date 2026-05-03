@@ -13,10 +13,6 @@ _Check out the live demo here:_ https://dosvid.netlify.app/
   <p>Goals view</p>
 </div>
 
-
-
-
-
 ## Design 
 Level progression system:
 - earned experience bar
@@ -33,10 +29,13 @@ Level progression system:
   - responsiveness for all devices
   - non-distracting, smooth animations
   - local storage - fully functional offline
-  
+
+
 <div align="center">
-<img width="900" alt="secondary page showing the rewards" src="https://github.com/user-attachments/assets/5d016fad-d94e-4f70-89cf-db58a31299b7" />
-  <p>Rewards View</p>
+<img width="280" alt="" src="https://github.com/user-attachments/assets/ece49052-fce0-430c-a95b-eb821f4522b0" hspace="5"/>
+<img width="280" alt="" src="https://github.com/user-attachments/assets/ec197598-b7a6-4b12-b41c-d568ff7797cf" hspace="5"/>
+<img width="280" alt="" src="https://github.com/user-attachments/assets/b09b77c9-b1e8-42a1-ad87-cd51a7cf6e06" hspace="5"/>
+  <p>Mobile layouts</p>
 </div>
 
 
@@ -45,22 +44,25 @@ The expected user experience involves adding some goals for the near future, and
 The user has the ability to decide how important that task is, my giving it a particular number of experience points, when the goal is completed. 
 
 
-<div align="center">
-<img width="900" alt="secondary page showing the history logs" src="https://github.com/user-attachments/assets/144a9df0-dec8-4a3c-a3d6-8ec29c769828" />
-  <p>History View</p>
-</div>
 
 ## Implementation Stack
 - **Typescript**: For better type safety, especially useful in managing reducer states and context.
 - **React + Context + useReducer**: A scalable pattern for global state without external libraries.
 - **Tailwind**: Utility-first styling allowed fast prototyping and responsive UI without context-switching into custom CSS.
-  
+
+
+
 ## Optimisation 
 #### Performance Testing 
 Overall, the app is responsive, and does not suffer from any noticeable lag, delay, even with longer list sizes. However, not just the Largest Contentful Paint, but also the First Contentful Paint, was significantly delayed when loading the website. LCP presented a time of, on average, 4.5seconds on x4 CPU slowdown and 3G network. Bottleneck was the bundle size. Upon inspection, the HTML file was <1kB, CSS was ~20kB, and the single Javascript file was ~250kB. 
 
 #### Bundle analysis & Chunk Splitting
 Initially, given the structure of the application, I chose to lazy-load the secondary views. This has allowed to reduce the main js chunk size from 250kB to 230kB, an ~8% reduction. As I was anticipating a different result, I decided to analyse the bundle contents, and more than 70% was the react-dom dependency. Further explained in [dependency externalisation](#dependency-externalisation)
+
+  <div align="center">
+<img width="900" alt="secondary page showing the history logs" src="https://github.com/user-attachments/assets/144a9df0-dec8-4a3c-a3d6-8ec29c769828" />
+  <p>History View</p>
+</div>
 
 ## Technical decisions
 
@@ -81,20 +83,14 @@ This project required a "time investment" into building the reducer and the cont
 The current system provides a great foundation for expansion and addition of new features. 
 - API integration
 - Calendar view - a more convenient, "zoomed out" view of previous progress, to complement the history view. 
-- Statistics view - to observe trends
-- Customiseable daily goal functionality
-- Сustomisation of "level difficulty"
-
-
-
+- Statistics view and trend observation
+- Customisable daily goal functionality
+- Customisable difficulty level
 
 <div align="center">
-<img width="280" alt="" src="https://github.com/user-attachments/assets/ece49052-fce0-430c-a95b-eb821f4522b0" hspace="5"/>
-<img width="280" alt="" src="https://github.com/user-attachments/assets/ec197598-b7a6-4b12-b41c-d568ff7797cf" hspace="5"/>
-<img width="280" alt="" src="https://github.com/user-attachments/assets/b09b77c9-b1e8-42a1-ad87-cd51a7cf6e06" hspace="5"/>
-  <p>Mobile layouts</p>
+<img width="900" alt="secondary page showing the rewards" src="https://github.com/user-attachments/assets/5d016fad-d94e-4f70-89cf-db58a31299b7" />
+  <p>Rewards View</p>
 </div>
-
 
 ## Author
 ### Author
